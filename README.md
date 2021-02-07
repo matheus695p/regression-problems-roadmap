@@ -1,0 +1,2 @@
+# Roadmap for regression problems
+A roadmap for regressions problems including [feature selection, linear regressions, decission trees, Support Vector Regressor, XGBoost, NN, PCA y NN, Kernel PCA (iteration over sigma) y NN, CNN (1D, 2D), synthetic data generation with VAE's and Synthetic minority oversampling technique (SMOTE), custom loss functions, customs activation functions, tensorflow tunner (random search) to find the best architectures of neural nets, etc.)]
