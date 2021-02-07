@@ -1,5 +1,5 @@
 import boto3
-from module_main import (train_nn_cosmos, verificar_a_en_b,
+from module_main import (train_nn, verificar_a_en_b,
                          obtener_nombre_modelo, reordenar_fuentes,
                          columnas_fuentes, modelo_gps_loads_mems_specto,
                          modelo_gps_loads_specto, modelo_gps_mems_specto,
@@ -49,88 +49,88 @@ if 'modelo_gps_loads_mems_specto' in nombre_modelos:
         nombre_modelo_fuente['modelo_gps_loads_mems_specto'])
     n_features = len(columns) - 1
     model = modelo_gps_loads_mems_specto(n_features)
-    train_nn_cosmos('modelo_gps_loads_mems_specto', columns, model)
+    train_nn('modelo_gps_loads_mems_specto', columns, model)
 if 'modelo_gps_loads_specto' in nombre_modelos:
     columns = columnas_fuentes(
         nombre_modelo_fuente['modelo_gps_loads_specto'])
     n_features = len(columns) - 1
     model = modelo_gps_loads_specto(n_features)
-    train_nn_cosmos('modelo_gps_loads_specto', columns, model)
+    train_nn('modelo_gps_loads_specto', columns, model)
 if 'modelo_gps_mems_specto' in nombre_modelos:
     columns = columnas_fuentes(
         nombre_modelo_fuente['modelo_gps_mems_specto'])
     n_features = len(columns) - 1
     model = modelo_gps_mems_specto(n_features)
-    train_nn_cosmos('modelo_gps_mems_specto', columns, model)
+    train_nn('modelo_gps_mems_specto', columns, model)
 if 'modelo_loads_mems_specto' in nombre_modelos:
     columns = columnas_fuentes(
         nombre_modelo_fuente['modelo_loads_mems_specto'])
     n_features = len(columns) - 1
     model = modelo_loads_mems_specto(n_features)
-    train_nn_cosmos('modelo_loads_mems_specto', columns, model)
+    train_nn('modelo_loads_mems_specto', columns, model)
 if 'modelo_gps_loads_mems' in nombre_modelos:
     columns = columnas_fuentes(
         nombre_modelo_fuente['modelo_gps_loads_mems'])
     n_features = len(columns) - 1
     model = modelo_gps_loads_mems(n_features)
-    train_nn_cosmos('modelo_gps_loads_mems', columns, model)
+    train_nn('modelo_gps_loads_mems', columns, model)
 if 'modelo_gps_loads' in nombre_modelos:
     columns = columnas_fuentes(
         nombre_modelo_fuente['modelo_gps_loads'])
     n_features = len(columns) - 1
     model = modelo_gps_loads(n_features)
-    train_nn_cosmos('modelo_gps_loads', columns, model)
+    train_nn('modelo_gps_loads', columns, model)
 if 'modelo_gps_mems' in nombre_modelos:
     columns = columnas_fuentes(
         nombre_modelo_fuente['modelo_gps_mems'])
     n_features = len(columns) - 1
     model = modelo_gps_mems(n_features)
-    train_nn_cosmos('modelo_gps_mems', columns, model)
+    train_nn('modelo_gps_mems', columns, model)
 if 'modelo_loads_mems' in nombre_modelos:
     columns = columnas_fuentes(
         nombre_modelo_fuente['modelo_loads_mems'])
     n_features = len(columns) - 1
     model = modelo_loads_mems(n_features)
-    train_nn_cosmos('modelo_loads_mems', columns, model)
+    train_nn('modelo_loads_mems', columns, model)
 if 'modelo_loads_specto' in nombre_modelos:
     columns = columnas_fuentes(
         nombre_modelo_fuente['modelo_loads_specto'])
     n_features = len(columns) - 1
     model = modelo_loads_specto(n_features)
-    train_nn_cosmos('modelo_loads_specto', columns, model)
+    train_nn('modelo_loads_specto', columns, model)
 if 'modelo_mems_specto' in nombre_modelos:
     columns = columnas_fuentes(
         nombre_modelo_fuente['modelo_mems_specto'])
     n_features = len(columns) - 1
     model = modelo_mems_specto(n_features)
-    train_nn_cosmos('modelo_mems_specto', columns, model)
+    train_nn('modelo_mems_specto', columns, model)
 if 'modelo_gps_specto' in nombre_modelos:
     columns = columnas_fuentes(
         nombre_modelo_fuente['modelo_gps_specto'])
     n_features = len(columns) - 1
     model = modelo_gps_specto(n_features)
-    train_nn_cosmos('modelo_gps_specto', columns, model)
+    train_nn('modelo_gps_specto', columns, model)
 if 'modelo_gps' in nombre_modelos:
     columns = columnas_fuentes(
         nombre_modelo_fuente['modelo_gps'])
     n_features = len(columns) - 1
     model = modelo_gps(n_features)
-    train_nn_cosmos('modelo_gps', columns, model)
+    train_nn('modelo_gps', columns, model)
 if 'modelo_loads' in nombre_modelos:
     columns = columnas_fuentes(
         nombre_modelo_fuente['modelo_loads'] - 1)
     n_features = len(columns) - 1
     model = modelo_loads(n_features)
-    train_nn_cosmos('modelo_loads', columns, model)
+    train_nn('modelo_loads', columns, model)
 if 'modelo_mems' in nombre_modelos:
     columns = columnas_fuentes(
         nombre_modelo_fuente['modelo_mems'])
     n_features = len(columns) - 1
     model = modelo_mems(n_features)
-    train_nn_cosmos('modelo_mems', columns, model)
+    train_nn('modelo_mems', columns, model)
 if 'modelo_specto' in nombre_modelos:
     columns = columnas_fuentes(
         nombre_modelo_fuente['modelo_specto'])
     n_features = len(columns) - 1
     model = modelo_specto(n_features)
-    train_nn_cosmos('modelo_specto', columns, model)
+    train_nn('modelo_specto', columns, model)

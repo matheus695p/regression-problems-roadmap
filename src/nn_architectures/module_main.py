@@ -41,7 +41,7 @@ os.environ["outputbucket"] =\
 print(os.path.abspath(sys.argv[0]))
 
 
-def train_nn_cosmos(filename, columns, model, hyperparameters={
+def train_nn(filename, columns, model, hyperparameters={
         "penalization": True,
         "batch_size": 4096,
         "epochs": 800,
