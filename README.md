@@ -12,7 +12,7 @@ A roadmap for regressions problems including:
 Pasos a seguir para comenzar a etiquetar
 
 ```sh
-$ git clone https://github.com/testing-matheus/labeller.git
+$ git clone https://github.com/matheus695p/regression-problems-roadmap.git
 $ cd regression-problems-roadmap
 $ instalar los requirements
 $ pip install -r requirements.txt
